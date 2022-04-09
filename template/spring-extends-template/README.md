@@ -40,11 +40,11 @@ class Application {
 
 	//just copy the code of next line is done!
 	//@Autowired
-	TemplateBean;
+	templateBean;
 
 	async main(){
 
-		this.TemplateBean.say();
+		this.templateBean.say();
 
 	}
 
