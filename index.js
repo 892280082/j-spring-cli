@@ -1,6 +1,6 @@
 #!/usr/bin/env node 
 const {readLine,readNumber} = require('./src/userInput')
-const {ExtendsModuleTemplateMove} = require("./src/ProjectMove");
+const {ExtendsModuleTemplateMove,SpringNativeTemplateMove} = require("./src/ProjectMove");
 const path =require('path');
 
 /**
@@ -26,9 +26,9 @@ const main = async ()=>{
 
 	const projectType = await readNumber("please enter the building type: \n 1.spring-ioc native \n 2.spring-mvc for web \n 3.spring-ioc-module",1,3)
 
-	const tips = ["","","please enter a java Bean name. example: HelloWorldBean "];
+	const tips = ["please enter a project name. example:HelloProject","","please enter a java Bean name. example: HelloWorldBean "];
 
-	const classConstructorList = [null,null,ExtendsModuleTemplateMove]
+	const classConstructorList = [SpringNativeTemplateMove,null,ExtendsModuleTemplateMove]
 
 	const projectName = await readLine(tips[projectType-1])
 

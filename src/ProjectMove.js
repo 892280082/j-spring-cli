@@ -147,4 +147,34 @@ class ExtendsModuleTemplateMove extends ProjectMove {
 
 }
 
-module.exports = {ProjectMove,ExtendsModuleTemplateMove};
+class SpringNativeTemplateMove extends ProjectMove {
+
+	constructor(targetProjectName){
+		super("spring-application-template")
+		this.targetProjectName = targetProjectName;
+	}
+
+	getModifyInstruct(){
+		const superDirection = super.getModifyInstruct()
+		const out = [];
+
+		//change file name
+		out.push(["replace","/package.json",`spring-application-template`,this.getFormatDirName()])
+		// out.push(["rename","/spring_extends/bean/TemplateBean.js",`${this.targetProjectName}.js`])
+
+		// //modify content
+		// const changeContent = [
+		// 	["templateBean",this.getFirstLowerName()],
+		// 	["TemplateBean",this.targetProjectName],
+		// 	["spring-extends-template",this.getFormatDirName()]
+		// ];
+
+		// out.push(["replaceRecursive",changeContent]);
+
+
+		return superDirection.concat(out)
+	}
+
+}
+
+module.exports = {ProjectMove,SpringNativeTemplateMove,ExtendsModuleTemplateMove};
