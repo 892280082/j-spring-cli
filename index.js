@@ -36,7 +36,10 @@ const main = async ()=>{
 
 	const mvInstance = await copyTemplate(classConstructorList[projectType-1],projectName);
 
-	console.log(`Building complish!  \n 1.cd ${mvInstance.getFormatDirName()} \n 2.npm install \n 3.node index.js \n Please Enter ctrl+c to exit the program!`);
+	console.log(`Building complish!  \n 1.cd ${mvInstance.getFormatDirName()} \n 2.npm install \n 3.node index.js \n`);
+
+	process.exit(0);
+
 }
 
 
