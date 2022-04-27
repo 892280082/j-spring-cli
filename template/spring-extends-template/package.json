@@ -4,9 +4,10 @@
   "description": "",
   "main": "spring_extends/index.js",
   "dependencies": {
-    "spring-ioc": "^1.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "spring-ioc": "^1.2.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
