@@ -1,4 +1,3 @@
-const {SpringBoot} = require("spring-ioc")
+const {app} = require("./app")
 
-
-new SpringBoot({srcList:["./app"]}).run();
+app.start();
