@@ -129,7 +129,7 @@ class ExtendsModuleTemplateMove extends ProjectMove {
 		const out = [];
 
 		//change file name
-		out.push(["rename","/resource/TemplateBean.json",`${this.targetProjectName}.json`])
+		//out.push(["rename","/resource/TemplateBean.json",`${this.targetProjectName}.json`])
 		out.push(["rename","/spring_extends/bean/TemplateBean.js",`${this.targetProjectName}.js`])
 
 		//modify content

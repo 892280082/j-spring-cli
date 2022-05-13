@@ -13,24 +13,30 @@ npm instlal spring-extends-template
 
 ##### 1.set the configuration file 
 
-###### file path: ${Project}/resource/TemplateBean.json
+###### file path: ${Project}/resource/app-dev.yaml
 ###### basic config:
-```json
-{
-	"msg":"hello world"
-}
+```yaml
+Spring-ioc:
+  log:
+    state: on
+    level: info
+TemplateBean:
+  msg: "Hello world. yq!"
 ```
 
 
 #### 2. load email module at launch.
 ```js
 const {SpringBoot} = require("spring-ioc")
-const {TemplateBeanScaner} = require("spring-extends-template")
+const {TemplateBeanScaner} = require("./spring_extends")
+
 
 new SpringBoot({
-	srcList:["./app"],
-	moduleList:[TemplateBeanScaner]
-}).run();
+	rootPath:__dirname,
+	srcList:["./demo"],
+	moduleList:[TemplateBeanScaner("./spring_extends")]
+}).start();
+
 ```
 
 #### 3. call in the spring container!
