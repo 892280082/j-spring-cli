@@ -5,7 +5,7 @@
   "main": "spring_extends/index.js",
   "dependencies": {
     "spring-ioc": "^1.2.2",
-    "spring-ioc-mvc": "^1.0.3"
+    "spring-ioc-mvc": "^1.0.6"
   },
   "devDependencies": {},
   "scripts": {

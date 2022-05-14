@@ -1,0 +1,6 @@
+Spring-ioc:
+  log:
+    state: on
+    level: debug
+Spring-ioc-mvc:
+  port: 3000
