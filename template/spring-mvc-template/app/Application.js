@@ -9,7 +9,7 @@ class Application {
 
 	async main(){
 
-		this.springIocMvc.start();
+		await this.springIocMvc.start();
 
 		this.log.info("Browser address: http://localhost:3000")
 		this.log.info("Browser address: http://localhost:3000/test/say")
