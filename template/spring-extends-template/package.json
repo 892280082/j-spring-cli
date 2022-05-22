@@ -5,7 +5,7 @@
   "main": "spring_extends/index.js",
   "dependencies": {},
   "devDependencies": {
-    "spring-ioc": "^1.2.6"
+    "spring-ioc": "^1.2.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
