@@ -4,3 +4,4 @@ Spring-ioc:
     level: debug
 Spring-ioc-mvc:
   port: 3000
+  viewEngine: art

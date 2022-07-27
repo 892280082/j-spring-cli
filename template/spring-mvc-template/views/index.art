@@ -1,0 +1,8 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>{{ msg }}</h1>
+	</body>
+	<script type="text/javascript" src="/public/index.js"></script>
+</html>

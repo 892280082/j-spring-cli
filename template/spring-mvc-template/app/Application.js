@@ -18,6 +18,18 @@ class Application {
 
 }
 
+
+//@Controller(page)
+class PageController {
+
+	//@Get
+	async index(request,response){
+		return ['index',{msg:'hello world!'}];
+	}
+
+}
+
+
 //@Controller
 //@Json
 class IndexController {
@@ -77,4 +89,4 @@ class SpringIocMvcExceptionHander {
 
 }
 
- module.exports = { Application,TestController,IndexController,SpringIocMvcExceptionHander }
+ module.exports = { Application,PageController,TestController,IndexController,SpringIocMvcExceptionHander }
