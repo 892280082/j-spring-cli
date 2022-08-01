@@ -1,2 +1,2 @@
-node ./bin/build.js
+node ./build.js
 node .runtemp.js
