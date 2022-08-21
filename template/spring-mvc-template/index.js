@@ -1,5 +1,5 @@
-// const {SpringBoot} = require("spring-ioc")
-// const {SpringIocMvcScaner} = require("spring-ioc-mvc")
+// const {SpringBoot} = require("j-spring")
+// const {SpringIocMvcScaner} = require("j-spring-mvc")
 
 
 // new SpringBoot({srcList:["./app"],moduleList:[SpringIocMvcScaner]}).run();

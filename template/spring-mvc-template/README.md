@@ -2,7 +2,7 @@
 
 #### intruoduce
 1. zhice teamson company development this module and all right reserved!
-2. attention ! just suport the spring-ioc framework.
+2. attention ! just suport the j-spring framework.
 
 
 #### install 
@@ -24,7 +24,7 @@ npm instlal spring-extends-template
 
 #### 2. load email module at launch.
 ```js
-const {SpringBoot} = require("spring-ioc")
+const {SpringBoot} = require("j-spring")
 const {TemplateBeanScaner} = require("spring-extends-template")
 
 new SpringBoot({

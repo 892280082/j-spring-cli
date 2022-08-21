@@ -8,7 +8,7 @@ class IndexController {
 
 	log;
 
-	//@Value(Spring-ioc-mvc.port)
+	//@Value(j-spring-mvc.port)
 	port;
 
 	//@Autowired

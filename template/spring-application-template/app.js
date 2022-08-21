@@ -1,4 +1,4 @@
-const {SpringBoot} = require("spring-ioc")
+const {SpringBoot} = require("j-spring")
 
 
 const app = new SpringBoot({

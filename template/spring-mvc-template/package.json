@@ -4,8 +4,8 @@
   "description": "",
   "main": "spring_extends/index.js",
   "dependencies": {
-    "spring-ioc-mvc": "1.2.1",
-    "spring-ioc":"1.3.6"
+    "j-spring-mvc": "1.2.5",
+    "j-spring":"1.3.6"
   },
   "devDependencies": {},
   "scripts": {
