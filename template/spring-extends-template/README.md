@@ -1,45 +1,41 @@
 # spring-extends-template
 
-#### intruoduce
-1. zhice teamson company development this module and all right reserved!
-2. attention ! just suport the j-spring framework.
+## 提醒
+j-spring框架专用包,普通Node程序无法引用!
 
 
-#### install 
+## 安装
 
-npm instlal spring-extends-template
+```shell
+npm instlal spring-extends-template --save
+```
 
-#### usage 
+## 1.添加模块配置文件
+> app-[env].yaml
 
-##### 1.set the configuration file 
-
-###### file path: ${Project}/resource/app-dev.yaml
-###### basic config:
 ```yaml
 j-spring:
   log:
     state: on
     level: info
-TemplateBean:
+# 添加扩展模块的配置
+spring-extends-template:
   msg: "Hello world. yq!"
 ```
 
-
-#### 2. load email module at launch.
+## 2. j-spring 项目中引用
 ```js
 const {SpringBoot} = require("j-spring")
-const {TemplateBeanScaner} = require("./spring_extends")
-
+const {TemplateBeanScaner} = require("spring-extends-template")
 
 new SpringBoot({
-	rootPath:__dirname,
-	srcList:["./demo"],
-	moduleList:[TemplateBeanScaner("./spring_extends")]
-}).start();
+  ...,
+	moduleList:[TemplateBeanScaner] ;//输入扫描器
+})
 
 ```
 
-#### 3. call in the spring container!
+## 3.可注入的bean
 ```js
 //@SpringBoot
 class Application {
@@ -48,14 +44,5 @@ class Application {
 	//@Autowired
 	templateBean;
 
-	async main(){
-
-		this.templateBean.say();
-
-	}
-
 }
 ```
-
-
-
