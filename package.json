@@ -1,7 +1,7 @@
 {
   "name": "j-spring-cli",
-  "version": "1.1.1",
-  "description": "for quickly create project for spring-ioc",
+  "version": "1.1.2",
+  "description": "for quickly create project for j-spring",
   "main": "index.js",
   "scripts": {
     "test": "node index.js"
