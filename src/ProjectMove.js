@@ -1,5 +1,5 @@
 const path = require('path')
-const fs = require("fs-extra"); 
+const fs = require("fs-extra");
 const {File} = require("./File")
 
 class ModifyInstructFactory {
@@ -89,10 +89,10 @@ class ProjectMove {
 
 		return new Promise((resolve,reject) => {
 
-			fs.copy(this.getTempPath(), destination, function (err) { 
-			    if (err){ 
+			fs.copy(this.getTempPath(), destination, function (err) {
+			    if (err){
 					reject(err)
-			    } 
+			    }
 			    resolve("complish")
 			});
 

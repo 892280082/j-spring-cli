@@ -24,11 +24,11 @@ const copyTemplate = async (classConstructor,projectName) => {
 
 const main = async ()=>{
 
-	const projectType = await readNumber("please enter the building type: \n 1.j-spring native \n 2.j-spring-mvc for web \n 3.j-spring-npm",1,3)
+	const projectType = await readNumber("please enter the building type: \n 1.j-spring native \n 2.j-spring-mvc for web \n 3.j-spring-npm extends module development",1,3)
 
-	const tips = ["please enter a project name. example:HelloProject",
-				"please enter a web project name. example:HelloWebProject",
-				"please enter a java Bean name. example: HelloWorldBean "];
+	const tip = "please enter a project name. example:HelloProject";
+
+	const tips = [tip,tip,tip];
 
 	const classConstructorList = [SpringNativeTemplateMove,SpringWebTemplateMove,ExtendsModuleTemplateMove]
 

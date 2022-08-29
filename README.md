@@ -1,18 +1,20 @@
-# spring-ioc-cli
+# <img src="doc/spring-framework.png" width="80" height="80"> Spring Framework For Node
 
-#### introduce
-spring-ioc command-line helper to create the scaffolding for project.
+#### j-spring-cli
+j-spring生态的脚手架项目
 
-
-#### install
+#### 使用
 ```shell
-npm install spring-ioc-cli -g
+#安装
+> npm install j-spring-cli -g
+#启用
+> j-spring-cli
 ```
 
-#### usage
+#### 模板列表
 ```shell
-spring-ioc-cli
-1.spring-ioc native program
-2.spring-mvc web program
-3.spring-ioc extends module development
+j-spring-cli
+1.j-spring native program
+2.j-spring-mv web program
+3.j-spring-npm extends module development
 ```
