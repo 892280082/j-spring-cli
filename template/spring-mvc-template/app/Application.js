@@ -3,20 +3,16 @@
 class Application {
 
 	//@Autowired
-	springIocMvc;
+	jSpringMvc;
 
 
 	async main(){
 
 		//启动springmvc
-		await this.springIocMvc.start();
+		await this.jSpringMvc.start();
 
 	}
 
 }
-
-
-
-
 
  module.exports = { Application}
