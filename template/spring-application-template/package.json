@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "j-spring": "^1.3.9"
+    "j-spring": "^1.4.1"
   }
 }
